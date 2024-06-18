@@ -17,7 +17,7 @@
   <img src="https://ashutoshgoswami24.github.io/Me/img/gc.png" alt="Deploy To Google Colab" style="width:200px;"/>
 </a>
 
-
+  <img src="https://img.icons8.com/?size=100&id=k4jADXhS5U1t&format=png&color=000000" alt="Deploy To Google Colab" style="width:100px;"/>
 
 
 
