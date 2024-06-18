@@ -1,1 +1,118 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ENV=VALUE</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #070707b9;
+    color: #ffffff;
+    padding: 20px;
+    margin: 0;
+  }
+  textarea {
+    width: 100%;
+    font-size: 14px;
+    height: 150px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-color: #333;
+    color: #ffffff;
+    border: 1px solid #444;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(111, 0, 255), 0 0 10px rgb(111, 0, 255), 0 0 15px rgb(111, 0, 255);
+  }
+  textarea#output {
+    height: 200px;
+    box-shadow: 0 0 5px rgb(111, 0, 255), 0 0 10px rgb(111, 0, 255), 0 0 15px rgb(111, 0, 255);
+  }
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #1f1f1f;
+    border: 2px solid #f00;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 5px #f00, 0 0 1px #f00, 0 0 2px #f00, 0 0 4px #f00;
+    margin-right: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  button:hover {
+    background-color: #f00;
+    color: #000;
+    box-shadow: 0 0 10px #f00, 0 0 10px #f00, 0 0 20px #f00, 0 0 40px #f00;
+  }
+  h2 {
+    color: #f00;
+    text-shadow: 0 0 5px #f00, 0 0 10px #f00, 0 0 15px #f00;
+    margin-bottom: 20px;
+  }
+  a {
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: rgba(217, 24, 243, 0.288);
+    text-shadow: 0 0 5px rgba(230, 37, 247, 0), 0 0 10px rgba(230, 37, 247, 0.342), 0 0 15px rgba(230, 37, 247, 0.281);
+    transition: all 0.3s ease-in-out;
+  }
+  a:hover {
+    color: #ff0000;
+    text-shadow: 0 0 10px #f00, 0 0 20px #f00, 0 0 30px #f00;
+  }
+</style>
+</head>
+<body>
+<h2>ENV=VALUE</h2>
+<textarea id="codeTextarea" placeholder="Enter multiple lines of ENV=VALUE pairs"></textarea>
+<div>
+  <button onclick="generateOutput()">Generate Env</button>
+  <button onclick="copyOutput()">Copy Env</button>
+</div>
+<textarea id="output" readonly placeholder="Generated output will appear here"></textarea>
+
+<footer class="footer">
+<center><a href="https://github.com/AshutoshGoswami24"><b>Ashutosh Goswami 24</b></a></center>
+</footer>
+
+<script>
+function generateOutput() {
+  // Get the textarea value
+  var inputText = document.getElementById('codeTextarea').value.trim();
+  var lines = inputText.split('\n');
+  var output = '';
+
+  // Iterate through each line
+  lines.forEach(function(line) {
+    line = line.trim();
+    if (line !== '') {
+      var parts = line.split('=');
+      if (parts.length === 2) {
+        var env = parts[0].trim();
+        var value = parts[1].trim();
+
+        // Generate the output format
+        output += `${env} = "${value}"  #@param {type:"string"}\n`;
+        output += `os.environ['${env}'] = ${env}\n\n`;
+      }
+    }
+  });
+
+  // Display the output
+  document.getElementById('output').value = output;
+}
+
+function copyOutput() {
+  var outputTextarea = document.getElementById('output');
+  outputTextarea.select();
+  document.execCommand('copy');
+}
+</script>
+</body>
+</html>
