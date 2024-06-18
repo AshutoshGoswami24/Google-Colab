@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="runtime-type">
+<meta property="og:description" content="runtime-type">
+<meta name="twitter:description" content="runtime-type">
+<meta name="keywords" content="Google Colab Telegram Bot runtime-type">
+<meta name="author" content="AshutoshGoswami24">
+<meta property="og:url" content="https://opengraph.githubassets.com/0gosbix1baflofdi6hok1een1cl7krxu/AshutoshGoswami24/Google-Colab">
+<meta name="twitter:url" content="https://opengraph.githubassets.com/0gosbix1baflofdi6hok1een1cl7krxu/AshutoshGoswami24/Google-Colab">
+<meta property="og:image" content="https://opengraph.githubassets.com/0gosbix1baflofdi6hok1een1cl7krxu/AshutoshGoswami24/Google-Colab">
+<meta name="twitter:image" content="https://opengraph.githubassets.com/0gosbix1baflofdi6hok1een1cl7krxu/AshutoshGoswami24/Google-Colab">
+<link rel="icon" href="https://graph.org/file/e44994dbc9ac8b48a0078.jpg" type="image/x-icon">
+<title>To add environment variables in Google Colab, use this method.</title>
+<meta property="og:title" content="To add environment variables in Google Colab, use this method.">
+<meta name="twitter:title" content="To add environment variables in Google Colab, use this method.">
+<meta name="twitter:card" content="To add environment variables in Google Colab, use this method.">
+    <title>Hardware Accelerator Configurations</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        /* Heading styles */
+        h2 {
+            color: #444;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        /* Container for accelerator cards */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* Individual accelerator card */
+        .card {
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: calc(50% - 20px); /* Two cards per row on larger screens */
+            margin-bottom: 20px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .card {
+                width: 100%; /* Stack cards vertically on smaller screens */
+            }
+        }
+
+        /* Card header styles */
+        .card h3 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        /* Card content styles */
+        .card p {
+            margin-bottom: 10px;
+        }
+
+        /* Note box */
+        .note {
+            background-color: #ffffcc;
+            padding: 10px;
+            border-left: 6px solid #ffeb3b;
+            margin-bottom: 15px;
+        }
+
+        /* Button styles */
+        .btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+            cursor: pointer; /* Add cursor pointer for better usability */
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Hardware Accelerator Configurations</h2>
+
+    <div class="card-container">
+        <!-- Existing cards -->
+        <div class="card">
+            <h3>CPU</h3>
+            <p><strong>Processor:</strong> Typically Intel Xeon or equivalent.<br><strong>RAM:</strong> Varied, typically 12GB to 25GB+.<br><strong>Storage:</strong> Standard SSD, around 100GB+.</p>
+            <p><strong>Usage:</strong> Suitable for general-purpose computing, data processing.</p>
+        </div>
+    
+        <div class="card">
+            <h3>NVIDIA Tesla T4 GPU</h3>
+            <p><strong>GPU:</strong> NVIDIA Tesla T4.<br><strong>Architecture:</strong> Turing<br><strong>RAM:</strong> 16GB GDDR6.<br><strong>CUDA Cores:</strong> 2,560<br><strong>Tensor Cores:</strong> 320<br><strong>Compute Capability:</strong> CUDA 7.5</p>
+            <p><strong>Usage:</strong> Optimized for machine learning tasks, deep learning training, and inference.</p>
+        </div>
+    
+        <div class="card">
+            <h3>NVIDIA A100 Tensor Core GPU</h3>
+            <p><strong>GPU:</strong> NVIDIA A100 Tensor Core.<br><strong>Architecture:</strong> Ampere<br><strong>RAM:</strong> 40GB HBM2.<br><strong>CUDA Cores:</strong> 6,912<br><strong>Tensor Cores:</strong> 432<br><strong>Compute Capability:</strong> CUDA 8.0</p>
+            <p><strong>Usage:</strong> High-performance computing, AI training, deep learning workloads, scientific computing.</p>
+        </div>
+    
+        <div class="card">
+            <h3>NVIDIA Tesla P4 GPU</h3>
+            <p><strong>GPU:</strong> NVIDIA Tesla P4.<br><strong>Architecture:</strong> Pascal<br><strong>RAM:</strong> 8GB GDDR5.<br><strong>CUDA Cores:</strong> 2,560<br><strong>Tensor Cores:</strong> 0<br><strong>Compute Capability:</strong> CUDA 6.1</p>
+            <p><strong>Usage:</strong> Good for graphics rendering, video transcoding, virtual desktops.</p>
+        </div>
+    
+        <div class="card">
+            <h3>Google Cloud TPU (deprecated)</h3>
+            <p><strong>TPU Type:</strong> Cloud TPU (Tensor Processing Unit).<br><strong>Compute Capability:</strong> 180 TFLOPS.<br><strong>Memory:</strong> 64GB HBM.</p>
+            <p><strong>Usage:</strong> Accelerating large-scale machine learning workloads, deprecated in favor of newer TPUs.</p>
+        </div>
+    
+        <div class="card">
+            <h3>Google Cloud TPU v2</h3>
+            <p><strong>TPU Type:</strong> Cloud TPU (Tensor Processing Unit).<br><strong>Compute Capability:</strong> Up to 180 TFLOPS.<br><strong>Memory:</strong> 64GB HBM.</p>
+            <p><strong>Usage:</strong> Designed for AI/ML workloads, offering enhanced performance and scalability.</p>
+        </div>
+    
+
+    <div class="note">
+        <p>These configurations provide a range of capabilities suitable for different computational tasks, from general-purpose computing on CPUs to specialized tasks like deep learning training on GPUs and TPUs.</p>
+    </div>
+
+    <div class="btn-container">
+        <a href="https://colab.research.google.com/" target="_blank" class="btn">Open Google Colab</a>
+    </div>
+</body>
+</html>
