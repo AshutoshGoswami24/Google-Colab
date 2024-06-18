@@ -24,7 +24,9 @@
 ## Connect with me <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30px">
 <p align="center">
 <a href="https://t.me/AshutoshGoswami24"><img src="https://img.shields.io/badge/-Asʜᴜᴛᴏsʜ Gᴏsᴡᴀᴍɪ 𝟸𝟺 🇮🇳™%20%20-0077B5?style=flat&logo=Telegram&logoColor=white"/></a>
-  <a href="https://t.me/AshuSupport"><img src="https://img.shields.io/badge/-Ashu Support 🛡️™%20%20-0077B5?style=flat&logo=Telegram&logoColor=white"/></a>
+<a href="https://t.me/AshuSupport"><img src="https://img.shields.io/badge/-Ashu Support 🛡️™%20%20-0077B5?style=flat&logo=Telegram&logoColor=white"/></a>
+<a href="https://t.me/PandaXTeam"><img src="https://img.shields.io/badge/-Panda & Team™%20%20-0077B5?style=flat&logo=Telegram&logoColor=white"/></a>
+<a href="https://t.me/Opleech_WD"><img src="https://img.shields.io/badge/-WOODcraft Mirror Zone ™™%20%20-0077B5?style=flat&logo=Telegram&logoColor=white"/></a>
 </p>
  
 -----
