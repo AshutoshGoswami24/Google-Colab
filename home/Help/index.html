@@ -1,1 +1,113 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Colab Basic Commands and Usage</title>
+    <style>
+        body {
+            background-color: #1a1a1a; /* Dark background color */
+            color: #ffffff; /* White text color */
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #ff1500; /* Reddish color for headings */
+        }
+
+        h2 {
+            color: #4ecdc4; /* Bluish color for sub-headings */
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        code {
+            background-color: #4e4e4e; /* Dark gray background for code */
+            color: #00fc7e; /* White text color for code */
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Google Colab Basic Commands and Usage</h1>
+
+    <h2>Introduction to Google Colab</h2>
+    <p>Google Colab (short for Colaboratory) is a free cloud-based platform provided by Google that allows you to write and execute Python code in a browser, without any setup required.</p>
+
+    <h2>Basic Commands</h2>
+    <ul>
+        <li><strong>Creating a New Notebook:</strong> Click on <code>File &rarr; New notebook</code> to create a new Python notebook.</li>
+        <li><strong>Executing Code:</strong> To run code in a cell, click on it and press <code>Shift + Enter</code>.</li>
+        <li><strong>Adding and Deleting Cells:</strong> Use the toolbar or keyboard shortcuts (<code>Ctrl + M</code> then <code>A</code> to add above, <code>Ctrl + M</code> then <code>B</code> to add below, <code>Ctrl + M</code> then <code>D</code> to delete).</li>
+        <li><strong>Markdown Cells:</strong> Use Markdown for text and explanations. Switch cell type to Markdown by selecting <code>Cell &rarr; Cell Type &rarr; Markdown</code>.</li>
+        <li><strong>Saving Notebooks:</strong> Notebooks are saved automatically to your Google Drive. You can also download them in various formats (<code>.ipynb</code>, <code>.py</code>, <code>.html</code>, etc.).</li>
+        <li><strong>Installing Packages:</strong> Use <code>!pip install package_name</code> to install Python packages. For example, <code>!pip install pandas</code>.</li>
+        <li><strong>Using GPU:</strong> Go to <code>Runtime &rarr; Change runtime type</code> to enable GPU or TPU acceleration for your notebook.</li>
+        <li><strong>Managing Sessions:</strong> Sessions may timeout after a period of inactivity. Use <code>Runtime &rarr; Reset all runtimes...</code> to reset the notebook.</li>
+    </ul>
+
+    <h2>Additional Features and Topics</h2>
+
+    <ul>
+        <li><strong>Using Markdown:</strong> You can format text, add headings, lists, links, and images using Markdown cells in Google Colab. It's a convenient way to document your code and provide explanations.</li>
+        
+        <li><strong>Collaboration:</strong> Google Colab allows multiple users to collaborate in real-time on the same notebook. You can share the notebook with others via a link or by adding their Google account.</li>
+        
+        <li><strong>Data Visualization:</strong> Colab supports interactive data visualization libraries like Matplotlib, Seaborn, and Plotly. You can create charts, plots, and graphs to analyze data directly in your notebook.</li>
+        
+        <li><strong>Access to Files:</strong> You can upload files to Google Colab using the file upload button or by connecting to your Google Drive. This makes it easy to work with datasets and other resources.</li>
+        
+        <li><strong>Keyboard Shortcuts:</strong> Colab provides several keyboard shortcuts for efficient navigation and execution. For example, press <code>Ctrl + M</code> followed by <code>H</code> to view all shortcuts.</li>
+        
+        <li><strong>Exporting Notebooks:</strong> You can export your Colab notebooks in various formats including <code>.ipynb</code>, <code>.py</code>, and <code>.html</code>. This flexibility allows you to share your work with others who may not use Colab.</li>
+        
+        <li><strong>Using GPUs and TPUs:</strong> Colab offers free access to GPUs (Graphics Processing Units) and TPUs (Tensor Processing Units) to accelerate your computations, especially useful for training machine learning models.</li>
+        
+        <li><strong>Integration with GitHub:</strong> You can clone GitHub repositories directly into Colab using Git commands. This makes it easy to access and collaborate on projects hosted on GitHub.</li>
+        
+        <li><strong>Running Shell Commands:</strong> Besides Python code, you can execute shell commands in Colab cells by prefixing them with an exclamation mark (<code>!</code>). This allows you to perform system operations like installing software or managing files.</li>
+        
+        <li><strong>Customizing Environments:</strong> Colab provides customizable environments where you can install specific versions of libraries or dependencies required for your projects.</li>
+        <li><strong>Interactive Widgets:</strong> Colab supports interactive widgets that allow you to create sliders, dropdowns, and other interactive elements to control and visualize data dynamically.</li>
+    
+        <li><strong>Form Integration:</strong> You can create forms in Colab to gather user input interactively. This is useful for parameterizing experiments or conducting surveys directly within your notebook.</li>
+        
+        <li><strong>TensorFlow Integration:</strong> Colab integrates seamlessly with TensorFlow, Google's open-source machine learning library. You can easily build, train, and deploy machine learning models using TensorFlow and Colab's GPU support.</li>
+        
+        <li><strong>BigQuery Integration:</strong> You can access and analyze large datasets stored in Google BigQuery directly from Colab notebooks. This enables powerful data analytics and machine learning workflows leveraging Google Cloud services.</li>
+        
+        <li><strong>Extensions and Plugins:</strong> Colab allows you to install extensions and plugins to enhance functionality. For example, you can add code snippets, table of contents, or specific libraries that are not included by default.</li>
+        
+        <li><strong>Sharing and Publishing:</strong> You can share your Colab notebooks publicly or privately. Colab provides options to publish notebooks directly to GitHub or share them via Google Drive links, making it easy to collaborate and showcase your work.</li>
+        
+        <li><strong>Version Control:</strong> Colab integrates with Git for version control. You can clone repositories, pull updates, and push changes directly from within your notebook, facilitating collaborative development workflows.</li>
+        
+        <li><strong>Advanced Data Processing:</strong> With access to Google Cloud services, Colab enables advanced data processing tasks such as streaming data analysis, natural language processing (NLP), and image recognition using pretrained models.</li>
+        
+        <li><strong>Offline Access:</strong> Colab allows limited offline access through the Colab Pro subscription, enabling you to work on notebooks without an internet connection and sync changes once online.</li>
+        
+        <li><strong>Education and Training:</strong> Colab is widely used in education and training for teaching programming, data science, and machine learning. It provides a sandbox environment with powerful computing resources accessible to students and educators.</li>
+    </ul>
+    <h2>Getting Started</h2>
+    <p>To start using Google Colab, visit <a href="https://colab.research.google.com/">colab.research.google.com</a>, sign in with your Google account, and create a new notebook or open an existing one.</p>
+
+    <p>Google Colab provides a powerful environment for data analysis, machine learning, and collaborative coding, all within a browser.</p>
+</body>
+
+</html>
