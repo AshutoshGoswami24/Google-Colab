@@ -9,7 +9,8 @@
 <p align="center">
 
 ## Env <b><a href="https://ashutoshgoswami24.github.io/Google-Colab">ENV=VALUE</a></b>
-<pre>To add environment variables in Google Colab, use this method.
+<p>To add environment variables in Google Colab, use this method.</p>
+<pre>
 API_HASH=123****
 API_ID=123***
 BOT_TOKEN=123***
