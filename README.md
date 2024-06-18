@@ -8,9 +8,9 @@
 
 <p align="center">
 
-## Env 
-<pre>Hello bro, to add environment variables in Google Colab, use this method.</pre> 
-<b><a href="https://ashutoshgoswami24.github.io/Google-Colab">ENV=VALUE</a></b>
+## Env <b><a href="https://ashutoshgoswami24.github.io/Google-Colab">ENV=VALUE</a></b>
+<pre>To add environment variables in Google Colab, use this method.</pre> 
+
 
 ## Google Colab
 
