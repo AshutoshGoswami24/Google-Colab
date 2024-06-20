@@ -16,7 +16,7 @@ API_ID=123***
 BOT_TOKEN=123***
 </pre> 
 
-## Runtime Type <b><a href="https://ashutoshgoswami24.github.io/Google-Colab/home/runtime-type/">ENV=VALUE</a></b>
+## Runtime Type <b><a href="https://ashutoshgoswami24.github.io/Google-Colab/home/runtime-type/">Read More</a></b>
 
 # Google Colab Runtime Types
 
