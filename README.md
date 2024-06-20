@@ -67,10 +67,10 @@ You can install additional Python libraries using `pip` or `apt-get` commands. F
 
 
 # Using pip to install a Python library
-`!pip install numpy`
+`!pip install pyrogram`
 
 # Using apt-get to install a system package
-`!apt-get install -y htop`
+`!apt-get install -y ffmpeg`
 
 
 ## Google Colab
