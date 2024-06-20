@@ -19,7 +19,7 @@ BOT_TOKEN=123***
 </pre> 
 
 
-## <details><summary>Runtime Type <b><a href="https://ashutoshgoswami24.github.io/Google-Colab/home/runtime-type/">Read More</a></b></summary>
+ <details><summary>## Runtime Type <b><a href="https://ashutoshgoswami24.github.io/Google-Colab/home/runtime-type/">Read More</a></b></summary>
 <br>
 # Google Colab Runtime Types
 
