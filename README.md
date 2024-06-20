@@ -65,7 +65,7 @@ To change the runtime type in Google Colab, follow these steps:
 Changing the runtime type will reset your notebook and may result in loss of unsaved work, so ensure you save your progress before making changes.
 </br>
 </details>
-## Basic Commands and Usage
+
 
 ### Installing Libraries
 You can install additional Python libraries using `pip` or `apt-get` commands. For example:
