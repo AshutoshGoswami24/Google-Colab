@@ -8,13 +8,59 @@
 
 <p align="center">
 
-## Env <b><a href="https://ashutoshgoswami24.github.io/Google-Colab">ENV=VALUE</a></b>
+## Env <b><a href="https://ashutoshgoswami24.github.io/Google-Colab/home/ENV=VALUE/">ENV=VALUE</a></b>
 <p>To add environment variables in Google Colab, use this method.</p>
 <pre>
 API_HASH=123****
 API_ID=123***
 BOT_TOKEN=123***
 </pre> 
+
+## Runtime Type <b><a href="https://ashutoshgoswami24.github.io/Google-Colab/home/runtime-type/">ENV=VALUE</a></b>
+
+# Google Colab Runtime Types
+
+## Change Runtime Type
+
+Google Colab allows you to change the runtime type to customize the computational resources used for your notebook. Here are the available options:
+
+### Runtime Type
+
+#### Python 3
+The default runtime environment for executing Python code. Colab primarily supports Python 3.
+
+### Hardware Accelerator
+
+#### CPU
+The standard processor used for computations. Suitable for general-purpose tasks and smaller workloads.
+
+#### T4 GPU
+NVIDIA T4 Tensor Core GPU, useful for machine learning tasks, particularly those involving deep learning. Provides significant acceleration compared to CPU.
+
+#### A100 GPU
+NVIDIA A100 Tensor Core GPU, one of the most powerful GPUs available. Ideal for intensive deep learning and high-performance computing tasks.
+
+#### L4 GPU
+NVIDIA L4 GPU, designed for AI inference and video processing tasks, providing efficient performance for specific workloads.
+
+#### TPU (deprecated)
+The original Tensor Processing Unit, now deprecated. Was designed to accelerate TensorFlow operations but is no longer recommended for new projects.
+
+#### TPU v2
+Second-generation Tensor Processing Unit. Offers better performance and efficiency for deep learning tasks, optimized for TensorFlow.
+
+## How to Change Runtime Type
+
+To change the runtime type in Google Colab, follow these steps:
+1. Click on `Runtime` in the top menu.
+2. Select `Change runtime type`.
+3. In the popup, choose the desired `Runtime type` (e.g., Python 3).
+4. Select the preferred `Hardware accelerator` from the dropdown menu (None, T4 GPU, A100 GPU, L4 GPU, TPU v2).
+5. Click `Save` to apply the changes.
+
+Changing the runtime type will reset your notebook and may result in loss of unsaved work, so ensure you save your progress before making changes.
+
+
 
 
 ## Google Colab
