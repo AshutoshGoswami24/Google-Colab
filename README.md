@@ -8,13 +8,17 @@
 
 <p align="center">
 
-## Env <b><a href="https://ashutoshgoswami24.github.io/Google-Colab/home/ENV=VALUE/">ENV=VALUE</a></b>
+<details><summary>Env <b><a href="https://ashutoshgoswami24.github.io/Google-Colab/home/ENV=VALUE/">ENV=VALUE</a></b></summary>
+<br>         
+
 <p>To add environment variables in Google Colab, use this method.</p>
 <pre>
 API_HASH=123****
 API_ID=123***
 BOT_TOKEN=123***
 </pre> 
+</br>
+</details>
 
 ## Runtime Type <b><a href="https://ashutoshgoswami24.github.io/Google-Colab/home/runtime-type/">Read More</a></b>
 
