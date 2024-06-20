@@ -20,8 +20,8 @@ BOT_TOKEN=123***
 </br>
 </details>
 
-## Runtime Type <b><a href="https://ashutoshgoswami24.github.io/Google-Colab/home/runtime-type/">Read More</a></b>
-
+<details><summary>Runtime Type <b><a href="https://ashutoshgoswami24.github.io/Google-Colab/home/runtime-type/">Read More</a></b></summary>
+<br>
 # Google Colab Runtime Types
 
 ## Change Runtime Type
@@ -63,7 +63,8 @@ To change the runtime type in Google Colab, follow these steps:
 5. Click `Save` to apply the changes.
 
 Changing the runtime type will reset your notebook and may result in loss of unsaved work, so ensure you save your progress before making changes.
-
+</br>
+</details>
 ## Basic Commands and Usage
 
 ### Installing Libraries
