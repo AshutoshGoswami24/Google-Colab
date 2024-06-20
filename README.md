@@ -23,7 +23,7 @@ BOT_TOKEN=123***
 <br>
 # Google Colab Runtime Types
 
-## Change Runtime Type
+ <b> Change Runtime Type </b>
 
 Google Colab allows you to change the runtime type to customize the computational resources used for your notebook. Here are the available options:
 
